@@ -34,7 +34,7 @@ defmodule NewRelicAbsinthe.MixProject do
   defp deps do
     [
       {:ex_doc, ">= 0.0.0", only: :dev},
-      {:new_relic_agent, "~> 1.19"},
+      {:new_relic_agent, git: "https://github.com/numerai/elixir_agent/", tag: "v1.27.7-numerai"},
       {:absinthe, "~> 1.4"},
       {:absinthe_plug, "~> 1.4", only: :test},
       {:plug_cowboy, "~> 2.0", only: :test}
